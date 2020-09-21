@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <style>
+        html,
+        body {
+            background-color:white;
+        }
+
+        .swiper-container {
+            width: 750px;
+            height: 380px;
+            background-color: white;
+        }
+
+        .swiper-slide img {
+            width: 100%;
+            height: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 style="text-align: center;">UCESCO AFRICA ADVISORY COUNCIL</h2>
+    <div style="text-align: center;"><img src="./img/ucesco.png" alt="ucesco" width="100" height="100"></div>
+    <P></P>
+   
+
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide" style="font-size: 10px;"><img src="./img/team01.png" alt=""><br/><b>1.AMANDA WELSH</b><br/> Literacy Champion<br/>Harvard University<br/>Northeastern University<br/>Reno, Nevada</div>
+            <div class="swiper-slide" style="font-size: 10px;"><img src="./img/team02.png" alt=""><br/><b>2.RUWAYDAH ABDULRAHMAN</b><br/>Philanthropy, fundraising, Not-for-profit Management<br/>Event management, strategic management<br/>Nairobi, Kenya</div>
+            <div class="swiper-slide" style="font-size: 10px;"><img src="./img/team03.png" alt=""><br/><b>3.FURRAH LOUISE</b><br/>Educationist<br/>UAE</div>
+            <div class="swiper-slide" style="font-size: 10px;"><img src="./img/team04.png" alt=""><br/><b>4.JONATHAN MICHAEL</b><br/>Educationist<br/>United Kingdom</div>
+            <div class="swiper-slide" style="font-size: 10px;"><img src="./img/team05.png" alt=""><br/><b>5.MERCH MBOCHU</b><br/>Management Consultant<br/>Nairobi, Kenya</div>
+            <div class="swiper-slide" style="font-size: 10px;"><img src="./img/team06.png" alt=""><br/><b>6.RAYMOND GUTT</b><br/>Research Manager at the Nielsen Company<br/>Spring Hill, Florida</div>
+            <div class="swiper-slide" style="font-size: 10px;"><img src="./img/team07.png" alt=""><br/><b>7.SCOTT FRASARD, PHD</b><br/>President/ CEO<br/>Frasard Consulting<br/>Texas, USA</div>
+            <div class="swiper-slide" style="font-size: 10px;"><img src="./img/team08.png" alt=""><br/><b>8.MEERA BADIANI </b><br/>London</div>
+            <div class="swiper-slide" style="font-size: 10px;"><img src="./img/team09.png" alt=""><br/><b>9.JOSEPHINE WAWIRA:</b><br/>A communications officer with <br/>experience in broadcast media and<br/>public relations</div>
+            <div class="swiper-slide" style="font-size: 10px;"><img src="./img/team10.png" alt=""><br/><b>10.ALAN JEFF SCHMIDT </b><br/>University Health System Behavioral Health<br/>Los Angeles </div>
+            <div class="swiper-slide" style="font-size: 10px;"><img src="./img/team11.png" alt=""><br/><b>11.NELLY ARIWI</b><br/>A Lawyer of keen interest and training in<br/>medical negligence claims, employment<br/>and labour laws and commercial law<br/>Nairobi, Kenya.</div>
+        </div>
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <div class="swiper-scrollbar"></div>
+    </div>
+
+
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script>
+        var mySwiper = new Swiper('.swiper-container', {
+            //direction: 'vertical', 
+            loop: true, 
+            autoplay: true,
+            effect: 'coverflow',
+            slidesPerView: 3,
+            centeredSlides: true,
+
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        })        
+    </script>
+
+</body>
+
+</html>
